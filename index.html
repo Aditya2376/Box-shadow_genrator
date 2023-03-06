@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script async src="https://api.countapi.xyz/hit/codefoxx.com/69960668-29a8-41a1-8f4d-0ebc6f14698a?callback=cb"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aditya Shadow Generator</title>
+</head>
+<body>
+    <nav>
+        <h1>Shadow Generator</h1>
+        <a target="_blank" href="https://www.linkedin.com/in/aditya-kumar-singh-41b0b4154/"><i class="fa-brands fa-twitter twitter"></i></a>
+    </nav>
+<div class="container">
+           <h2>Made By Aditya</h2>
+           <p  class="like"><b class="number" id="visits"></b></p>
+           
+        <div class="left">
+            <label for="">X Position</label>
+            <span class="span_Xposition">4</span><br>
+            <input type="range"  class="Xposition" min="-30" max="30" value="4"><br>
+            <label for="">Y Position</label>
+            <span class="span_Yposition">6</span><br>
+            <input type="range"  class="Yposition"  min="-30" max="30"  value="6"><br>
+            <label for="">Opacity</label>
+            <span class="span_Opacity">0.9</span><br>
+            <input type="range" min="0" class="Opacity" max="1" step="0.1" value="0.9"><br>
+            <label for="">Blur</label>
+            <span class="span_Blur">4</span><br>
+            <input type="range" class="Blur"  min="0" max="70" value="4"><br>
+            
+
+        </div>
+        <div class="right">
+    
+            <label for="">First Color</label>
+            <span class="span_Color1">#faebd7</span><br>
+            <input type="color" class="Color1" value="#faebd7"><br>
+            <label for="">Second Color</label>
+            <span class="span_Color2">#00ff33</span><br>
+            <input type="color" class="Color2" value="#00ff33"><br>
+            <label for="">DegreeColor1</label>
+            <span class="span_Degree">10</span><br>
+            <input type="range" min="-360" class="Degree" max="360"  value="10"><br>
+           
+            
+            
+        </div>
+</div>
+<div class="code">
+      <button class="copy">Copy Css</button>
+     
+  
+           <pre>
+
+
+
+              
+
+    /*Shadow Style*/
+            
+
+    .container:before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient( <b class="bold_Degree">10</b>deg,<b class="bold_Color1"> #faebd7</b>,<b class="bold_Color2">#00ff33</b>);
+        transform: translate(<b class="bold_Xposition">4</b>px,<b class="bold_Yposition">6</b>px) scale(1.01);
+        filter: blur(<b class="bold_Blur">4</b>);
+        transition: opacity 0.3s;
+        border-radius: inherit;
+        opacity:<b class="bold_Opacity">0.9</b> ;
+    }
+
+    /*Div Style*/
+
+
+    .container{
+        position: relative;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 96vh;
+        background-color: #1e454b;
+        height:400px;
+        width: 80vw;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        margin-top: 100px;
+        
+      }
+
+        </pre>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>
